@@ -40,6 +40,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import com.armory.settings.PagerSlidingTabStrip;
+import com.armory.settings.fragments.QSHeaders;
 import com.armory.settings.fragments.QsRowsColumns;
 
 
@@ -86,6 +87,7 @@ public class AdvancedSettings extends SettingsPreferenceFragment {
         public SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new QsRowsColumns();
+            frags[1] = new QSHeaders();
         }
 
         @Override
@@ -107,7 +109,8 @@ public class AdvancedSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                getString(R.string.qs_rows_columns_title)};
+                getString(R.string.qs_rows_columns_title),
+                getString(R.string.custom_header_title)};
         return titleString;
     }
 
