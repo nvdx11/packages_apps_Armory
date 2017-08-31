@@ -15,4 +15,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="swap_volume_buttons">Swap volume buttons rotation based</string>
+    <!-- NavBar -->
+    <string name="double_tap_sleep_navbar">Double tap to sleep on navbar</string>
+
 </resources>
