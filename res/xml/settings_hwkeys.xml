@@ -19,4 +19,8 @@
             android:title="@string/swap_volume_buttons"
             android:defaultValue="true" />
 
+   <PreferenceScreen
+            android:key="hwkeys_advanced"
+            android:fragment="com.armory.settings.ui.hwkeys.AdvancedSettings"
+            android:title="@string/settings_advanced_title"/>
 </PreferenceScreen>
