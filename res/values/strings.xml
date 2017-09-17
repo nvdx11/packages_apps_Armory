@@ -71,5 +71,9 @@
         <!-- IME Switch -->
         <string name="status_bar_ime_notification_title">Show IME notification</string>
         <string name="status_bar_ime_notification_summary">If navigation bar is not available</string>
+        <!-- Net monitor -->
+        <string name="network_traffic_state_title">Network traffic</string>
+        <string name="network_traffic_state_summary">Show net activity in statusbar</string>
+        <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
 
 </resources>
