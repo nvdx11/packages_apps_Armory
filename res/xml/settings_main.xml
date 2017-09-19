@@ -30,6 +30,11 @@
             android:title="@string/lockscreen_settings_title"/>
 
     <PreferenceScreen
+            android:fragment="com.armory.settings.ui.powermenu.MainSettings"
+            android:key="armory_powermenu_settings"
+            android:title="@string/powermenu_settings_title"/>
+
+    <PreferenceScreen
             android:fragment="com.armory.settings.ui.usb.MainSettings"
             android:key="armory_usb_settings"
             android:title="@string/usb_settings_title"/>
