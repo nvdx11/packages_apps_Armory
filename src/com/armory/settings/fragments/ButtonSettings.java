@@ -41,6 +41,7 @@ import android.view.KeyEvent;
 import android.view.WindowManagerGlobal;
 
 import com.android.internal.logging.MetricsLogger;
+import com.android.internal.util.gzosp.DeviceUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -61,6 +62,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_MENU_PRESS = "hardware_keys_menu_press";
     private static final String KEY_MENU_LONG_PRESS = "hardware_keys_menu_long_press";
     private static final String KEY_ENABLE_HW_KEYS = "enable_hw_keys";
+    private static final String CATEGORY_KEYS = "button_keys";
+    private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
+    private static final String KEYS_DISABLE_HW_KEY = "hardware_keys_disable";
 
     // category keys
     private static final String CATEGORY_HOME = "home_key";
@@ -96,6 +100,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private ListPreference mMenuLongPressAction;
     private ListPreference mBacklightTimeout;
     private CustomSeekBarPreference mButtonBrightness;
+    private SwitchPreference mEnableNavBar;
+    private SwitchPreference mDisabkeHWKeys;
     private SwitchPreference mEnableHwKeys;
 
     private Handler mHandler;
@@ -117,6 +123,29 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final boolean hasBackKey = (deviceKeys & KEY_MASK_BACK) != 0;
 
         boolean hasAnyBindableKey = false;
+
+        final PreferenceCategory keysCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_KEYS);
+
+        if (deviceKeys == 0) {
+            prefScreen.removePreference(keysCategory);
+        } else {
+            mEnableNavBar = (SwitchPreference) prefScreen.findPreference(
+                   KEYS_SHOW_NAVBAR_KEY);
+
+            mDisabkeHWKeys = (SwitchPreference) prefScreen.findPreference(
+                    KEYS_DISABLE_HW_KEY);
+
+            boolean showNavBarDefault = DeviceUtils.deviceSupportNavigationBar(getActivity());
+            boolean showNavBar = Settings.System.getInt(resolver,
+                        Settings.System.NAVIGATION_BAR_SHOW, showNavBarDefault ? 1:0) == 1;
+            mEnableNavBar.setChecked(showNavBar);
+
+            boolean harwareKeysDisable = Settings.System.getInt(resolver,
+                        Settings.System.HARDWARE_KEYS_DISABLE, 0) == 1;
+            mDisabkeHWKeys.setChecked(harwareKeysDisable);
+        }
+
         final PreferenceCategory homeCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_HOME);
         final PreferenceCategory menuCategory =
@@ -224,6 +253,27 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         pref.setSummary(pref.getEntries()[index]);
         Settings.System.putInt(getContentResolver(), setting, Integer.valueOf(value));
+    }
+
+    public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference == mEnableNavBar) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_SHOW, checked ? 1:0);
+            // remove hw button disable if we disable navbar
+            if (!checked) {
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.HARDWARE_KEYS_DISABLE, 0);
+                mDisabkeHWKeys.setChecked(false);
+            }
+            return true;
+        } else if (preference == mDisabkeHWKeys) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.HARDWARE_KEYS_DISABLE, checked ? 1:0);
+            return true;
+        }
+        return super.onPreferenceTreeClick(preference);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
