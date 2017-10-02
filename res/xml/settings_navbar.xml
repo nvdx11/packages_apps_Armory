@@ -19,4 +19,10 @@
             android:title="@string/double_tap_sleep_navbar"
             android:defaultValue="true" />
 
+        <com.android.settings.preference.SystemSettingSwitchPreference
+            android:key="navigation_bar_ime_button"
+            android:title="@string/navigation_bar_ime_button_title"
+            android:summary="@string/navigation_bar_ime_button_summary"
+            android:defaultValue="true"/>
+
 </PreferenceScreen>

@@ -22,6 +22,8 @@
     <!-- NavBar -->
     <string name="navbar_armory_title">Navigation Bar</string>
         <string name="double_tap_sleep_navbar">Double tap to sleep on navbar</string>
+        <string name="navigation_bar_ime_button_title">Show IME navigation bar button</string>
+        <string name="navigation_bar_ime_button_summary">Input switcher in navigation bar</string>
 
     <!-- Power Menu -->
     <string name="powermenu_armory_title">Power Menu</string>
@@ -62,6 +64,9 @@
 
     <!-- StatusBar -->
     <string name="statusbar_armory_title">Status Bar</string>
-        <string name="double_tap_sleep_statusbar">Double tap to sleep on statusbar</string>
+        <string name="double_tap_sleep_statusbar">Double tap to sleep on statusbar</string>      
+        <!-- IMEI Switch -->
+        <string name="status_bar_ime_notification_title">Show IME notification</string>
+        <string name="status_bar_ime_notification_summary">If navigation bar is not available</string>
 
 </resources>
