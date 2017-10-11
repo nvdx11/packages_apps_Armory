@@ -14,24 +14,16 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <PreferenceScreen
-            android:fragment="com.armory.settings.ui.hwkeys.MainSettings"
-            android:key="armory_hwkeys_settings"
-            android:title="@string/hwkeys_settings_title"/>
+        <com.android.settings.preference.SystemSettingSwitchPreference
+            android:key="wake_when_plugged_or_unplugged"
+            android:title="@string/wake_when_plugged_or_unplugged_title"
+            android:summary="@string/wake_when_plugged_or_unplugged_summary"
+            android:defaultValue="false" />
 
-    <PreferenceScreen
-            android:fragment="com.armory.settings.ui.navbar.MainSettings"
-            android:key="armory_navbar_settings"
-            android:title="@string/navbar_settings_title"/>
-
-    <PreferenceScreen
-            android:fragment="com.armory.settings.ui.lockscreen.MainSettings"
-            android:key="armory_lockscreen_settings"
-            android:title="@string/lockscreen_settings_title"/>
-
-    <PreferenceScreen
-            android:fragment="com.armory.settings.ui.usb.MainSettings"
-            android:key="armory_usb_settings"
-            android:title="@string/usb_settings_title"/>
+        <com.android.settings.preference.SystemSettingSwitchPreference
+            android:key="vibration_on_charge_state_changed"
+            android:title="@string/vibration_on_charge_state_changed_title"
+            android:summary="@string/vibration_on_charge_state_changed_summary"
+            android:defaultValue="true" />
 
 </PreferenceScreen>

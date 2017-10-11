@@ -15,16 +15,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Volume Rocker -->
+    <!-- HW Keys -->
+    <string name="hwkeys_settings_title">Hardware Keys</string>
         <string name="swap_volume_buttons">Swap volume buttons rotation based</string>
 
     <!-- NavBar -->
+    <string name="navbar_settings_title">Navigation Bar</string>
         <string name="double_tap_sleep_navbar">Double tap to sleep on navbar</string>
 
     <!-- Lockscreen -->
+    <string name="lockscreen_settings_title">LockScreen</string>
         <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
 
     <!-- USB Connection -->
+    <string name="usb_settings_title">USB Interface</string>
          <!-- Wake on Plug -->
         <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
         <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
