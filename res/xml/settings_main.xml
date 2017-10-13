@@ -17,26 +17,26 @@
     <PreferenceScreen
             android:fragment="com.armory.settings.ui.hwkeys.MainSettings"
             android:key="armory_hwkeys_settings"
-            android:title="@string/hwkeys_settings_title"/>
+            android:title="@string/hwkeys_armory_title"/>
 
     <PreferenceScreen
             android:fragment="com.armory.settings.ui.navbar.MainSettings"
             android:key="armory_navbar_settings"
-            android:title="@string/navbar_settings_title"/>
+            android:title="@string/navbar_armory_title"/>
 
     <PreferenceScreen
             android:fragment="com.armory.settings.ui.lockscreen.MainSettings"
             android:key="armory_lockscreen_settings"
-            android:title="@string/lockscreen_settings_title"/>
+            android:title="@string/lockscreen_armory_title"/>
 
     <PreferenceScreen
             android:fragment="com.armory.settings.ui.powermenu.MainSettings"
             android:key="armory_powermenu_settings"
-            android:title="@string/powermenu_settings_title"/>
+            android:title="@string/powermenu_armory_title"/>
 
     <PreferenceScreen
             android:fragment="com.armory.settings.ui.usb.MainSettings"
             android:key="armory_usb_settings"
-            android:title="@string/usb_settings_title"/>
+            android:title="@string/usb_armory_title"/>
 
 </PreferenceScreen>
