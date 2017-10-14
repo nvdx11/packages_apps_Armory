@@ -25,6 +25,11 @@
             android:title="@string/navbar_armory_title"/>
 
     <PreferenceScreen
+            android:fragment="com.armory.settings.ui.statusbar.MainSettings"
+            android:key="armory_statusbar_settings"
+            android:title="@string/statusbar_armory_title"/>
+
+    <PreferenceScreen
             android:fragment="com.armory.settings.ui.lockscreen.MainSettings"
             android:key="armory_lockscreen_settings"
             android:title="@string/lockscreen_armory_title"/>
