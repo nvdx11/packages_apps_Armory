@@ -38,6 +38,10 @@
     <string name="lockscreen_armory_title">LockScreen</string>
         <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
 
+    <!-- QuickSettings and Notification Drawer -->
+    <string name="drawer_armory_title">Notification Drawer</string>
+        <string name="quick_pulldown_title">Right handed quick pulldown</string>
+
     <!-- USB Connection -->
     <string name="usb_armory_title">USB Interface</string>
          <!-- Wake on Plug -->

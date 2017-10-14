@@ -20,14 +20,19 @@
             android:title="@string/hwkeys_armory_title"/>
 
     <PreferenceScreen
+            android:fragment="com.armory.settings.ui.statusbar.MainSettings"
+            android:key="armory_statusbar_settings"
+            android:title="@string/statusbar_armory_title"/>
+
+    <PreferenceScreen
             android:fragment="com.armory.settings.ui.navbar.MainSettings"
             android:key="armory_navbar_settings"
             android:title="@string/navbar_armory_title"/>
 
     <PreferenceScreen
-            android:fragment="com.armory.settings.ui.statusbar.MainSettings"
-            android:key="armory_statusbar_settings"
-            android:title="@string/statusbar_armory_title"/>
+            android:fragment="com.armory.settings.ui.qs.MainSettings"
+            android:key="armory_drawer_settings"
+            android:title="@string/drawer_armory_title"/>
 
     <PreferenceScreen
             android:fragment="com.armory.settings.ui.lockscreen.MainSettings"
