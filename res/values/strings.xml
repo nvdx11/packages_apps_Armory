@@ -87,8 +87,8 @@
 
     <!-- StatusBar -->
     <string name="statusbar_armory_title">Status Bar</string>
-        <string name="double_tap_sleep_statusbar">Double tap to sleep on statusbar</string>      
-        <!-- IMEI Switch -->
+        <string name="double_tap_sleep_statusbar">Double tap to sleep on statusbar</string>
+        <!-- IME Switch -->
         <string name="status_bar_ime_notification_title">Show IME notification</string>
         <string name="status_bar_ime_notification_summary">If navigation bar is not available</string>
 
