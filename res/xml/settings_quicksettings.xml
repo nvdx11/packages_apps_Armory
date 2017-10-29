@@ -20,8 +20,8 @@
             android:defaultValue="true" />
 
     <PreferenceScreen
-            android:key="qs_rows_columns"
-            android:fragment="com.armory.settings.fragments.QsRowsColumns"
-            android:title="@string/qs_rows_columns_title"/>
+            android:key="qs_advanced"
+            android:fragment="com.armory.settings.ui.qs.AdvancedSettings"
+            android:title="@string/settings_advanced_title"/>
 
 </PreferenceScreen>

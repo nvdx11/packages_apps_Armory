@@ -15,6 +15,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Generic Strings  -->
+    <string name="settings_advanced_title">Advanced</string>
+
     <!-- HW Keys -->
     <string name="hwkeys_armory_title">Hardware Keys</string>
         <string name="swap_volume_buttons">Swap volume buttons rotation based</string>
@@ -47,7 +50,7 @@
     <string name="drawer_armory_title">Notification Drawer</string>
         <string name="quick_pulldown_title">Right handed quick pulldown</string>
         <!-- QS rows and columns -->
-        <string name="qs_rows_columns_title">Quick Tiles Rows and Columns</string>
+        <string name="qs_rows_columns_title">Rows and Columns</string>
         <string name="qs_rows_portrait_title">Tiles Rows on Portrait</string>
         <string name="qs_rows_landscape_title">Tiles Rows on Landscape</string>
         <string name="qs_columns_portrait_title">Tiles Columns on Portrait</string>
