@@ -19,8 +19,8 @@
     <string name="settings_advanced_title">Advanced</string>
 
     <!-- HW Keys -->
-    <string name="hwkeys_armory_title">Hardware keys</string>
-        <string name="hwkeys_title">HWKeys Rebinding</string>
+    <string name="hwkeys_armory_title">Button Remapping</string>
+        <string name="hwkeys_title">HW Key Rebinding</string>
         <string name="swap_volume_buttons">Swap volume buttons rotation based</string>
         <!-- Hardware keys -->
         <string name="hardware_keys_home_key_title">Home button</string>

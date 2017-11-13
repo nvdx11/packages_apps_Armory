@@ -14,10 +14,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <PreferenceScreen
-            android:fragment="com.armory.settings.ui.hwkeys.MainSettings"
-            android:key="armory_hwkeys_settings"
-            android:title="@string/hwkeys_armory_title"/>
 
     <PreferenceScreen
             android:fragment="com.armory.settings.ui.statusbar.MainSettings"
@@ -25,7 +21,13 @@
             android:title="@string/statusbar_armory_title"/>
 
     <PreferenceScreen
-            android:fragment="com.armory.settings.ui.navbar.MainSettings"
+            android:fragment="com.armory.settings.ui.hwkeys.MainSettings"
+            android:key="armory_hwkeys_settings"
+            android:title="@string/hwkeys_armory_title"/>
+
+
+    <PreferenceScreen
+            android:fragment="com.armory.settings.ui.navbar.AdvancedSettings"
             android:key="armory_navbar_settings"
             android:title="@string/navbar_armory_title"/>
 

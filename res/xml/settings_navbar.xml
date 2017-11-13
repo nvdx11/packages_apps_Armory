@@ -15,14 +15,14 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
         <com.android.settings.preference.SystemSettingSwitchPreference
-            android:key="double_tap_sleep_navbar"
-            android:title="@string/double_tap_sleep_navbar"
-            android:defaultValue="true" />
-
-        <com.android.settings.preference.SystemSettingSwitchPreference
             android:key="navigation_bar_ime_button"
             android:title="@string/navigation_bar_ime_button_title"
             android:summary="@string/navigation_bar_ime_button_summary"
             android:defaultValue="true"/>
+
+        <PreferenceScreen
+            android:key="qs_advanced"
+            android:fragment="com.armory.settings.ui.navbar.AdvancedSettings"
+            android:title="@string/settings_advanced_title"/>
 
 </PreferenceScreen>
