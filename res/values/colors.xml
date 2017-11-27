@@ -13,9 +13,9 @@
 
 <resources>
 
-<color name="background_tab_pressed">#AA0000</color>
-<color name="Primary">#AA0000</color>
-<color name="PrimaryDark">#770000</color>
-<color name="Accent">#AA0000</color>
+<color name="background_tab_pressed">@*android:color/primary_device_default_dark</color>
+<color name="Primary">@*android:color/primary_device_default_dark</color>
+<color name="PrimaryDark">@*android:color/accent_device_default_700</color>
+<color name="Accent">@*android:color/primary_device_default_dark</color>
 
 </resources>
