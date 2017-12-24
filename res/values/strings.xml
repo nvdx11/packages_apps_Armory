@@ -42,17 +42,6 @@
         <!-- Kill app long press back -->
         <string name="kill_app_longpress_back">Kill app back button</string>
         <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
-        <!-- Buttons backlight timeout -->
-        <string name="backlight_timeout_title">Buttons backlight timeout</string>
-        <string name="backlight_timeout_on">Enabled always</string>
-        <string name="backlight_timeout_3s">3 sec</string>
-        <string name="backlight_timeout_default">5 sec (default)</string>
-        <string name="backlight_timeout_10s">10 sec</string>
-        <string name="backlight_timeout_15s">15 sec</string>
-        <string name="backlight_timeout_20s">20 sec</string>
-        <string name="backlight_timeout_30s">30 sec</string>
-        <!-- Enable keys backlight-->
-        <string name="button_brightness_title">Backlight</string>
 
 
     <!-- NavBar -->
