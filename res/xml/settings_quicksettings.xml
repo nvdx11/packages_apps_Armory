@@ -30,5 +30,4 @@
             android:fragment="com.armory.settings.ui.qs.AdvancedSettings"
             android:title="@string/settings_advanced_title"/>
 
-
 </PreferenceScreen>
